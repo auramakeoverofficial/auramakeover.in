@@ -30,6 +30,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
 
   <!-- LOCAL BUSINESS SCHEMA -->
   <script type="application/ld+json">
@@ -244,10 +246,53 @@ ul li::before {
   font-size: 0.9rem;
 }
 
+    .top-bar {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.top-bar a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #2c2c2c;
+  text-decoration: none;
+}
+
+.top-bar a i {
+  font-size: 1rem;
+  color: #b76e79;
+}
+
+.top-bar a:hover {
+  color: #b76e79;
+}
+
   </style>
 </head>
 
 <body>
+<div class="top-bar">
+  <a href="https://wa.me/919217479633" target="_blank" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    WhatsApp
+  </a>
+
+  <a href="https://www.instagram.com/auramakeover" target="_blank" aria-label="Instagram">
+    <i class="fa-brands fa-instagram"></i>
+    Instagram
+  </a>
+</div>
 
 <!-- HERO -->
 <section class="hero">
