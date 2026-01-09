@@ -12,32 +12,34 @@
   <meta name="keywords" content="Aura Makeover, bridal makeup artist, makeup studio, party makeup, engagement makeup, haldi mehndi makeup, makeup artist near me" />
 
   <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://auramakeover.in/" />
 
   <!-- OPEN GRAPH (SOCIAL PREVIEW) -->
   <meta property="og:title" content="Aura Makeover | Professional Makeup & Bridal Makeovers" />
   <meta property="og:description" content="Bridal, engagement & party makeup using premium international products. Studio & travel-to-venue services available." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://auramakeover.in" />
-  <meta property="og:image" content="/banner.jpeg" />
+  <meta property="og:image" content="https://auramakeover.in/banner.jpeg" />
 
   <!-- TWITTER -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Aura Makeover | Professional Makeup & Bridal Makeovers" />
   <meta name="twitter:description" content="Premium bridal, engagement & party makeup. Studio & travel-to-venue services." />
-  <meta name="twitter:image" content="/banner.jpeg" />
+  <meta name="twitter:image" content="https://auramakeover.in/banner.jpeg" />
 
   <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="preload" as="image" href="/banner.jpeg">
 
 
   <!-- LOCAL BUSINESS SCHEMA -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BeautySalon",
+    "@type": "MakeupArtist",
     "name": "Aura Makeover",
     "url": "https://auramakeover.in",
     "telephone": "+919217479633",
@@ -46,7 +48,10 @@
       "@type": "PostalAddress",
       "addressCountry": "IN"
     },
-    "areaServed": "India",
+    "areaServed": {
+  "@type": "City",
+  "name": "Faridabad"
+},
     "sameAs": [
       "https://www.instagram.com/ranjana_makeoverr"
     ],
@@ -322,7 +327,7 @@ ul li::before {
 <section class="hero">
   <h1>Aura Makeover</h1>
   <p>Professional Makeup & Bridal Makeovers</p>
-  <a class="btn" href="https://wa.me/919217479633">Book on WhatsApp</a>
+  <a class="btn" href="https://wa.me/919217479633" aria-label="Book appointment on WhatsApp">Book on WhatsApp</a>
 </section>
 
 <!-- ABOUT -->
@@ -371,10 +376,10 @@ ul li::before {
 <section>
   <h2 class="center">Portfolio</h2>
   <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6" alt="Bridal makeup">
-    <img src="https://images.unsplash.com/photo-1542060748-10c28b62716f" alt="Engagement makeup">
-    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="Party makeup">
-    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9" alt="Makeup studio work">
+    <img src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6" loading="lazy" alt="Bridal makeup">
+    <img src="https://images.unsplash.com/photo-1542060748-10c28b62716f" loading="lazy" alt="Engagement makeup">
+    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" loading="lazy" alt="Party makeup">
+    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9" loading="lazy" alt="Makeup studio work">
   </div>
 </section>
 
