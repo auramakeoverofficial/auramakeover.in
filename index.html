@@ -111,6 +111,33 @@
       font-weight: 600;
     }
 
+    ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+ul li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  color: #555;
+}
+
+ul li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #b76e79;
+  font-size: 0.9rem;
+}
+
+    section h2 {
+  letter-spacing: 0.5px;
+}
+
+
     /* SERVICES */
     .grid {
       display: grid;
@@ -178,6 +205,45 @@
       .hero h1 { font-size: 2.2rem; }
       section { padding: 45px 18px; }
     }
+
+    .testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.testimonial-card {
+  background: #faf6f7;
+  padding: 30px 25px;
+  border-radius: 18px;
+  position: relative;
+  text-align: left;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.testimonial-card .quote {
+  font-size: 3rem;
+  color: #b76e79;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  opacity: 0.25;
+}
+
+.client-name {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #2c2c2c;
+  font-size: 0.9rem;
+}
+
   </style>
 </head>
 
@@ -245,10 +311,40 @@
 
 <!-- TESTIMONIALS -->
 <section class="center">
-  <h2>Client Testimonials</h2>
-  <p>“Her bridal makeup made me look elegant and natural. I received so many compliments.”</p>
-  <p>“Very professional and punctual. She understood exactly what I wanted.”</p>
+  <h2>Client Love</h2>
+
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <span class="quote">❝</span>
+      <p>
+        Aura Makeover gave me the exact bridal look I had imagined — elegant,
+        natural, and flawless. My makeup stayed perfect throughout the day and
+        looked stunning in every photo.
+      </p>
+      <div class="client-name">— Ritika Sharma (Bride)</div>
+    </div>
+
+    <div class="testimonial-card">
+      <span class="quote">❝</span>
+      <p>
+        I was very nervous about my engagement look, but the team understood my
+        preference perfectly. The makeup felt light, classy, and absolutely
+        beautiful.
+      </p>
+      <div class="client-name">— Pooja Verma (Engagement)</div>
+    </div>
+
+    <div class="testimonial-card">
+      <span class="quote">❝</span>
+      <p>
+        Very professional and punctual service. The haldi and mehndi looks were
+        soft, fresh, and exactly what I wanted. Highly recommended.
+      </p>
+      <div class="client-name">— Sneha Kapoor</div>
+    </div>
+  </div>
 </section>
+
 
 <!-- TERMS -->
 <section>
