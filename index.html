@@ -223,6 +223,13 @@ ul li::before {
       section { padding: 45px 18px; }
     }
 
+    /* Mobile polish */
+@media (max-width: 600px) {
+  .brand-name {
+    display: none; /* icon only on mobile */
+  }
+}
+
     .testimonial-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -305,8 +312,8 @@ ul li::before {
 }
 
 .logo {
-  width: 22px;
-  height: 22px;
+  width: 45px;
+  height: 45px;
 }
 
 .brand-name {
